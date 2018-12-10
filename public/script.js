@@ -1,21 +1,21 @@
-
 /*
-var matrix = [
-  [0, 0, 1, 0, 0],
-  [1, 0, 0, 0, 0],
-  [0, 1, 0, 0, 0],
-  [0, 0, 1, 0, 0],
-  [1, 1, 0, 0, 0],
-  [1, 1, 0, 0, 0],
-  [1, 1, 0, 0, 0]
-];
 
-var matrix = [];
-var m = 10;
-var n = 10;
+        var matrix = [
+        [0, 0, 1, 0, 0],
+        [1, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0],
+        [0, 0, 1, 0, 0],
+        [1, 1, 0, 0, 0],
+        [1, 1, 0, 0, 0],
+        [1, 1, 0, 0, 0]
+        ];
 
-var side = 50;
-*/
+        var matrix = [];
+        var m = 10;
+        var n = 10;
+
+        var side = 50;
+
 kerpar1Qanak = 400;
 kerpar2Qanak = 100;
 kerpar3Qanak = 50;
@@ -202,6 +202,19 @@ function draw() {
         }
     }
 }
+
+*/
+var clickCount = 0;
+function clickHandler(evt){
+   clickCount++;
+   console.log(evt);
+   var str = "Thanks for clicking " + clickCount;
+   this.innerText = str;
+}
+
+var p = document.getElementById("pElement");
+p.addEventListener("click", clickHandler);
+
 
 
 

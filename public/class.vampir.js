@@ -1,4 +1,4 @@
-class Vampir extends LivingCreature{
+module.exports = class Vampir extends LivingCreature{
     constructor(x, y, index) {
         super(x, y, index)
 

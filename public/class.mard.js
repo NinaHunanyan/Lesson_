@@ -1,4 +1,4 @@
-class Mard extends LivingCreature{
+module.exports = class Mard extends LivingCreature{
     constructor(x, y, index) {
         super(x, y, index)
 
